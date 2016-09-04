@@ -31,6 +31,7 @@ public class TransitionActivity extends BaseActivity {
 		ActivityTransitionBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_transition);
 		sample = (MainObject) getIntent().getExtras().getSerializable(MainObject.SAMPLE_TAG);
 		binding.setTransitionSample(sample);
+		setTitle("Activity Transition");
 	}
 
 	private void setupLayout() {

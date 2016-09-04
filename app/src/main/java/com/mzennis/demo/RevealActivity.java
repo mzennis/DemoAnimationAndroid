@@ -48,6 +48,7 @@ public class RevealActivity extends BaseActivity implements View.OnTouchListener
 		ActivityRevealBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_reveal);
 		MainObject sample = (MainObject) getIntent().getExtras().getSerializable(MainObject.SAMPLE_TAG);
 		binding.setReveal(sample);
+		setTitle("Circular Reveal Animation");
 	}
 
 	private void setupWindowAnimations() {

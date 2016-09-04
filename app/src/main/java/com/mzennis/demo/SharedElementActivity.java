@@ -4,10 +4,8 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.transition.ChangeBounds;
 import android.transition.Slide;
-import android.transition.Visibility;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.mzennis.demo.databinding.ActivitySharedElementsBinding;
 import com.mzennis.demo.fragments.SharedElementsFragment;
@@ -30,6 +28,7 @@ public class SharedElementActivity extends BaseActivity {
 		ActivitySharedElementsBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_shared_elements);
 		binding.setSharedElements(sample);
 		setupLayout(sample);
+		setTitle("Shared Elements");
 	}
 
 	private void setupWindowAnimations() {
