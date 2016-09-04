@@ -24,7 +24,9 @@
 
         <activity android:name=".TransactionExplodeActivity" />
 
+        <activity android:name=".SharedElementActivity" />
 
+        <activity android:name=".RevealActivity" />
 
     </application>
 

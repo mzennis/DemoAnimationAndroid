@@ -22,13 +22,13 @@
             android:layout_margin="20dp">
 
             <Button
-                android:id="@+id/sample1_button2"
+                android:id="@+id/show_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Touch me to show the transition!" />
 
             <Button
-                android:id="@+id/sample1_button3"
+                android:id="@+id/exit_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Back to Main Menu" />

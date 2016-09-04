@@ -38,8 +38,8 @@ public class MainActivity extends BaseActivity {
 	private void setupSamples() {
 		samples = Arrays.asList(
 				new MainObject("Activity Transition", "Animating between different UI states in an application"),
-				new MainObject("Circular Reveal Animation", "Reveal animations provide users visual continuity when you show or hide a group of UI elements"),
-				new MainObject("Shared Elements", "A shared element transition determines how shared element views are animated from one Activity/Fragment to another during a scene transition")
+				new MainObject("Shared Elements", "A shared element transition determines how shared element views are animated from one Activity/Fragment to another during a scene transition"),
+				new MainObject("Circular Reveal Animation", "Reveal animations provide users visual continuity when you show or hide a group of UI elements")
 		);
 	}
 

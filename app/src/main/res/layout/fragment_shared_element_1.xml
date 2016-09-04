@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/default_user"/>
+
+        <TextView
+            android:id="@+id/name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sebastian"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/age_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22 Thn"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/living_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Jl. Gubeng Airlangga I No. 2, Surabaya - Indonesia"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dc_lightgray"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/desc_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Lorem ipsum dolor sit amet, id vero labore laoreet sed. Sit ut dictas aliquid verterem. Nibh appareat maiestatis sed ad, eu eam vocibus ancillae sadipscing. At sed mucius omittam, purto albucius principes eam an, vel equidem mediocritatem cu. Dolorem praesent ad ius, per ex ferri percipit complectitur, sed virtute percipit molestiae at. Nostro epicuri persecuti ut mel."/>
+
+    </LinearLayout>
+
+</LinearLayout>

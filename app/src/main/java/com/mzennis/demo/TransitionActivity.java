@@ -1,10 +1,12 @@
 package com.mzennis.demo;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.Visibility;
+import android.view.View;
 
 import com.mzennis.demo.databinding.ActivityTransitionBinding;
 import com.mzennis.demo.object.MainObject;
@@ -22,12 +24,35 @@ public class TransitionActivity extends BaseActivity {
 		bindData();
 		setDisplayHome(true);
 		setupWindowAnimations();
+		setupLayout();
 	}
 
 	private void bindData() {
 		ActivityTransitionBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_transition);
 		sample = (MainObject) getIntent().getExtras().getSerializable(MainObject.SAMPLE_TAG);
 		binding.setTransitionSample(sample);
+	}
+
+	private void setupLayout() {
+
+		findViewById(R.id.show_btn).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(TransitionActivity.this, TransactionSlideActivity.class);
+				i.putExtra(MainObject.SAMPLE_TAG, sample);
+				transitionTo(i);
+			}
+		});
+
+		findViewById(R.id.exit_btn).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Visibility returnTransition = buildReturnTransition();
+				getWindow().setReturnTransition(returnTransition);
+
+				finishAfterTransition();
+			}
+		});
 	}
 
 	private void setupWindowAnimations() {
