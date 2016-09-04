@@ -15,4 +15,9 @@
     <color name="dc_white">#FFFFFF</color>
     <color name="dc_transparent">@android:color/transparent</color>
     <color name="dc_black_transparent">#B2000000</color>
+
+    <color name="sample_yellow">#F4B350</color>
+    <color name="sample_red">#E74C3C</color>
+    <color name="sample_green">#87D37C</color>
+    <color name="sample_blue">#19B5FE</color>
 </resources>
